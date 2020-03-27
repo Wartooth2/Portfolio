@@ -1,53 +1,47 @@
 * {
   box-sizing: border-box;
-}
-
-/* header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  border: 1px solid red;
-}
- .nav-links {
-  display: flex;
-  margin-top: 30px;
-  list-style: none;
-
-}
-li  {
-  display: flex;
-  font: 30px;
-  margin: 0px 5px;
-  padding: 0px 15px;
-} */
-* {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Josefin Sans", sans-serif;
 }
-
+button {
+  background-color: #008cba;
+  color: white;
+  font-size: 20px;
+  border-radius: 5%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
 .navbar {
   /*Position of the navbar is fixed, starts at the top of the page */
   position: fixed;
   top: 0;
   overflow: hidden;
   font-size: 18px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
   padding-bottom: 10px;
-  width: 100%
+  width: 100%;
 }
 main {
   /*Main content is starting 80px from the top*/
   margin-top: 80px;
+  text-align: center;
 }
 .main-nav {
   list-style-type: none;
   display: none;
+  float: right;
+  margin-top: 30px;
+  background-color: white;
 }
 
 .nav-links,
@@ -76,9 +70,47 @@ main {
   color: rgb(167, 42, 42);
   font-size: 24px;
 }
+p {
+  margin: 0 auto 30px;
+  padding: 10px;
+}
 
 .active {
   display: block;
+}
+
+.contact-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.icon-img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.field-description {
+  padding: 20px;
+}
+.project-icons {
+  padding: 20px;
+}
+.tools-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.tools-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 0px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -95,6 +127,7 @@ main {
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 0;
   }
 
   .main-nav li {
@@ -102,7 +135,7 @@ main {
   }
 
   .nav-links {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .logo {
@@ -117,5 +150,9 @@ main {
   .nav-links:hover {
     color: rgb(167, 42, 42);
   }
+  p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 27px;
+  }
 }
-

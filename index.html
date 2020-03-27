@@ -11,10 +11,18 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-           crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Timothy Lindsay's Portfolio</title>
   </head>
   <body>
     <!-- <h1>Timothy Lindsay</h1>
@@ -25,7 +33,7 @@
         <li>Contact</li>
       </ul>
     </nav> -->
-      <header>
+    <header>
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars"></i>
@@ -33,31 +41,32 @@
         <a href="#" class="logo">Timothy Lindsay</a>
         <ul class="main-nav" id="js-menu">
           <li>
-            <a href="#" class="nav-links">About</a>
+            <a href="#about_me" class="nav-links">About</a>
           </li>
           <li>
-            <a href="#" class="nav-links">Projects</a>
+            <a href="#projects" class="nav-links">Projects</a>
           </li>
           <li>
-            <a href="#" class="nav-links">Contact</a>
+            <a href="#contact" class="nav-links">Contact</a>
           </li>
         </ul>
       </nav>
-      </header>
+    </header>
 
     <main role="main">
       <section class="fields">
         <h1>Greetings, I'm Tim.</h1>
         <p>
           I’m a Web Developer based in San Antonio, Texas. Feel free to take a
-          look around to learn more about me and my recent projects. <br><br>
+          look around to learn more about me and my recent projects.
+          <br /><br />
         </p>
       </section>
 
-      <section class="fields">
-        <h2 class="field-descripttion">About</h2>
-        <img src="assets/Ganon_1.png" alt="Hero Image of Tim Lindsay">
-        <br><br>
+      <section class="fields" id="about_me">
+        <h2 class="field-description">About</h2>
+        <img src="assets/Ganon_1.png" alt="Hero Image of Tim Lindsay" />
+        <br /><br />
         <p>
           Programming is an art that allows me to express myself. Being able to
           provide something that is visually pleasing as well as user-friendly
@@ -67,41 +76,111 @@
           the user.
         </p>
       </section>
-      <br><br>
-      <section class="project-description">
-        <h2 class="field-descripttion">Projects</h2>
-        <img src="assets/Physics_Icon.png" alt="Physics Mentor icon image">
-        <br>
-        <div class= "project-links">
-          <button type="button">Live Demo</button>
-          <button type="button">View Code</button>
+      <br /><br />
+      <section class="project-description" id="projects">
+        <h2 class="field-description">Projects</h2>
+        <img
+          src="assets/Physics_Icon.png"
+          class="project-icons"
+          alt="Physics Mentor icon image"
+        />
+        <br />
+        <div class="project-links">
+          <a
+            href="https://wartooth2.github.io/Physics-Quiz-App/"
+            target="_blank"
+            ><button type="button">Live Demo</button></a
+          >
+          <a
+            href="https://github.com/Wartooth2/Physics-Quiz-App"
+            target="_blank"
+            ><button type="button">View Code</button></a
+          >
         </div>
-        <br>
+        <br />
         <p>
           Physics Mentor is an app that congregates questions to test your
           knowledge on entry level Physics topics.
         </p>
-      </section>
-      <br><br>
-      <section class="contact-info">
-        <h2>Contact</h2>
-        <div class=contact-info-formatting>
-          <p> I love interacting with people. Reach out to me to talk about work, freelance, any questions you may have, or even just to chat. I would love to hear from you!</p>
-          <p>Email Icon</p>
-          <p>Linked In Icon</p>
-          <p>Github Icon</p>
+        <div class="tools-list">
+          <ul>
+            <li>
+              <img
+                src="assets/html5_icon.png"
+                target="_blank"
+                class="tools-icon"
+                alt="html logo"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/ccs-icon.jpg"
+                target="_blank"
+                class="tools-icon"
+                alt="css logo"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/js-icon.png"
+                target="_blank"
+                class="tools-icon"
+                alt="javascript logo"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/jquery-icon.jpg"
+                target="_blank"
+                class="tools-icon"
+                alt="jquery logo"
+              />
+            </li>
+          </ul>
         </div>
       </section>
-
-      <section>
-
-      </section>
-
-      <section>
-
+      <br /><br />
+      <section class="contact-info" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info-formatting">
+          <p>
+            I love interacting with people. Reach out to me to talk about work,
+            freelance, any questions you may have, or even just to chat. I would
+            love to hear from you!
+          </p>
+          <div class="contact-links">
+            <ul>
+              <li>
+                <a href="mailto:lindsay.tim20@gmail.com" target="_blank"
+                  ><img
+                    src="assets/email_icon.jpg"
+                    target="_blank"
+                    class="icon-img"
+                    alt="Tim Lindsay Email"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    src="assets/linkedin_icon3.png"
+                    class="icon-img"
+                    alt="Tim Lindsay Linked In"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/Wartooth2" target="_blank"
+                  ><img
+                    src="assets/github_icon.png"
+                    class="icon-img"
+                    alt="Tim Lindsay Github"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info"></footer>
   </body>
   <script src="app.js"></script>
 </html>
